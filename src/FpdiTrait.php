@@ -103,10 +103,10 @@ trait FpdiTrait
     protected function getPdfParserInstance(StreamReader $streamReader)
     {
         /** @noinspection PhpUndefinedClassInspection */
-        if (\class_exists(FpdiPdfParser::class)) {
+        //if (\class_exists(FpdiPdfParser::class)) {
             /** @noinspection PhpUndefinedClassInspection */
-            return new FpdiPdfParser($streamReader);
-        }
+          //  return new FpdiPdfParser($streamReader);
+        //}
 
         return new PdfParser($streamReader);
     }
